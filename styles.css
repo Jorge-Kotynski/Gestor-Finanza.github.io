@@ -1,0 +1,124 @@
+/* Estilos CSS para dispositivos móviles y de escritorio */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff; /* Cambiado el color de la fuente a blanco */
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Color de fondo principal */
+}
+
+.paper-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombreado sutil */
+    padding: 20px;
+    color: #000; /* Cambiado el color de la fuente a negro */
+}
+
+.container {
+    background-color: transparent; /* Cambiado el fondo a transparente */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    color: #000; /* Cambiado el color de la fuente a negro */
+}
+
+.balance {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.transaction {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+input, button {
+    padding: 5px 10px;
+}
+
+/* Cambiado el color del botón de ingreso a verde */
+button:nth-child(1) {
+    background-color: #00cc00;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cambiado el color del botón de egreso a rojo */
+button:nth-child(2) {
+    background-color: #ff6666;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-list {
+    background-color: transparent; /* Cambiado el fondo a transparente */
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    color: #000; /* Cambiado el color de la fuente a negro */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.transaction-list-header {
+    color: #000; /* Cambiado el color de la fuente a negro */
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000; /* Cambiado el color de la línea a negro */
+}
+
+.income, .expense {
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff; /* Cambiado el color de la fuente a blanco */
+}
+
+.income {
+    background-color: #00cc00;
+}
+
+.expense {
+    background-color: #ff6666;
+}
+
+/* Estilos CSS para dispositivos móviles */
+@media (max-width: 600px) {
+    .balance {
+        font-size: 1em; /* Tamaño de fuente ligeramente más pequeño */
+    }
+
+    .transaction-list {
+        margin-top: 15px; /* Reduje el margen superior */
+    }
+}
